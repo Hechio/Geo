@@ -16,6 +16,10 @@
 		8B957364270DAF7600A263B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B957362270DAF7600A263B3 /* LaunchScreen.storyboard */; };
 		8B95736F270DAF7700A263B3 /* GeoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B95736E270DAF7700A263B3 /* GeoTests.swift */; };
 		8B95737A270DAF7700A263B3 /* GeoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B957379270DAF7700A263B3 /* GeoUITests.swift */; };
+		8B957395270DB50C00A263B3 /* ContinentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B957393270DB50C00A263B3 /* ContinentTableViewCell.swift */; };
+		8B957396270DB50C00A263B3 /* ContinentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B957394270DB50C00A263B3 /* ContinentTableViewCell.xib */; };
+		8B95739F270DB52E00A263B3 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B95739D270DB52E00A263B3 /* CountryTableViewCell.swift */; };
+		8B9573A0270DB52E00A263B3 /* CountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B95739E270DB52E00A263B3 /* CountryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		8B957375270DAF7700A263B3 /* GeoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B957379270DAF7700A263B3 /* GeoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoUITests.swift; sourceTree = "<group>"; };
 		8B95737B270DAF7700A263B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B957393270DB50C00A263B3 /* ContinentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentTableViewCell.swift; sourceTree = "<group>"; };
+		8B957394270DB50C00A263B3 /* ContinentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContinentTableViewCell.xib; sourceTree = "<group>"; };
+		8B95739D270DB52E00A263B3 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		8B95739E270DB52E00A263B3 /* CountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +109,8 @@
 		8B957353270DAF7000A263B3 /* Geo */ = {
 			isa = PBXGroup;
 			children = (
-				8B957354270DAF7000A263B3 /* AppDelegate.swift */,
-				8B957356270DAF7000A263B3 /* SceneDelegate.swift */,
-				8B957358270DAF7000A263B3 /* ViewController.swift */,
-				8B95735A270DAF7000A263B3 /* Main.storyboard */,
-				8B957360270DAF7600A263B3 /* Assets.xcassets */,
-				8B957362270DAF7600A263B3 /* LaunchScreen.storyboard */,
+				8B95738C270DB02300A263B3 /* Resources */,
+				8B95738B270DB01500A263B3 /* Sources */,
 				8B957365270DAF7600A263B3 /* Info.plist */,
 				8B95735D270DAF7000A263B3 /* Geo.xcdatamodeld */,
 			);
@@ -129,6 +133,78 @@
 				8B95737B270DAF7700A263B3 /* Info.plist */,
 			);
 			path = GeoUITests;
+			sourceTree = "<group>";
+		};
+		8B95738B270DB01500A263B3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8B95738D270DB17700A263B3 /* Screens */,
+				8B957354270DAF7000A263B3 /* AppDelegate.swift */,
+				8B957356270DAF7000A263B3 /* SceneDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8B95738C270DB02300A263B3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B957360270DAF7600A263B3 /* Assets.xcassets */,
+				8B957362270DAF7600A263B3 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B95738D270DB17700A263B3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8B957392270DB26100A263B3 /* Utils */,
+				8B957391270DB22A00A263B3 /* Details */,
+				8B95738E270DB18E00A263B3 /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		8B95738E270DB18E00A263B3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8B957390270DB1E600A263B3 /* Controllers */,
+				8B95738F270DB1CD00A263B3 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8B95738F270DB1CD00A263B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B95735A270DAF7000A263B3 /* Main.storyboard */,
+				8B957394270DB50C00A263B3 /* ContinentTableViewCell.xib */,
+				8B95739E270DB52E00A263B3 /* CountryTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B957390270DB1E600A263B3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B95739D270DB52E00A263B3 /* CountryTableViewCell.swift */,
+				8B957393270DB50C00A263B3 /* ContinentTableViewCell.swift */,
+				8B957358270DAF7000A263B3 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8B957391270DB22A00A263B3 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		8B957392270DB26100A263B3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +310,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B957396270DB50C00A263B3 /* ContinentTableViewCell.xib in Resources */,
 				8B957364270DAF7600A263B3 /* LaunchScreen.storyboard in Resources */,
 				8B957361270DAF7600A263B3 /* Assets.xcassets in Resources */,
 				8B95735C270DAF7000A263B3 /* Main.storyboard in Resources */,
+				8B9573A0270DB52E00A263B3 /* CountryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +339,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B95739F270DB52E00A263B3 /* CountryTableViewCell.swift in Sources */,
 				8B957359270DAF7000A263B3 /* ViewController.swift in Sources */,
 				8B957355270DAF7000A263B3 /* AppDelegate.swift in Sources */,
 				8B957357270DAF7000A263B3 /* SceneDelegate.swift in Sources */,
 				8B95735F270DAF7000A263B3 /* Geo.xcdatamodeld in Sources */,
+				8B957395270DB50C00A263B3 /* ContinentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
